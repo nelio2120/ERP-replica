@@ -1,0 +1,35 @@
+
+.line-break {
+    width:100%;
+    height:50px;
+}
+
+/* Arrow left */
+
+.encabezado {
+    width:100%;
+    background-color:#000;
+}
+
+.arrow-left {
+    display: inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+    transition: all 0.2s ease-out;
+}
+
+.arrow-left:hover {
+    background-color: rgb(168, 166, 166);
+}
+
+.arrow-left i {
+    font-size: 2em;
+    line-height:1.5em;
+}
+
+.level1title {
+    font-size:2em;
+    padding-left:2em;
+}
+

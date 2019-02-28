@@ -1,0 +1,146 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(118, 150, 170);
+  color: white;
+  font-family: 'Source Sans Pro';
+  /* overflow-x: hidden; */
+}
+
+.tiles {
+  position: fixed;
+  z-index: 5;
+  top:0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content:flex-start;
+  /* Para el overflow-y */
+  height: 100%;
+  overflow-y: auto;
+}
+
+.tiles__tile {
+  /* El espaciado entre tiles */
+  margin: 3px;
+  transition: all .25s ease-out;
+  cursor: pointer;
+}
+
+.content {
+  z-index: 10;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.content__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  align-content:flex-start;
+  transform: scale(0);
+  transition: all 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-origin: 0% 100%;
+}
+
+.content__item.active {
+  transform: scale(1);
+  background: #3f9fc5;
+}
+
+.content__item.active .content-wrap {
+  margin:3px;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.content-wrap {
+  outline: white 0 solid;
+  transition: outline .1s ease-out;
+}
+
+.content-wrap:hover {
+  outline:white 2px solid;
+}
+
+.content__item .content-wrap {
+  
+  transform: scale(0.7);
+  opacity: 0;
+  transition: all 0.8s 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.tile-medium {
+  width:125px;
+  height:125px;
+  color:black;
+}
+
+.tile-wide {
+  width:310px;
+  height:125px;
+}
+
+
+.content3 {
+  z-index: 10;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.content3__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+  flex-flow: row wrap;
+  justify-content:center;
+  transition: display 2s ease-out;
+  align-content:flex-start;
+}
+
+.content-wrap3 {
+  margin:3px;
+}
+
+.content3__item.active {
+  display: flex;
+  background: #3f9fc5;
+}
+
+/* --------------- */
+.stuff {
+  margin: 6vw;
+  max-width: 768px;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.tile-medium .icon {
+  top:45%;
+  font-size:45px;
+}

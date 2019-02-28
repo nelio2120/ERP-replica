@@ -1,0 +1,51 @@
+
+.line-break {
+    width:100%;
+    height:50px;
+}
+
+.secLevel {
+    background: red;
+    width:200px;
+    height:150px;
+}
+
+.secLevel span {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.secLevel:hover {
+    background: blue;
+}
+
+/* Arrow left */
+
+.arrow {
+    border:1px solid black;
+    width:100%;
+    background-color:#000;
+}
+
+.arrow-left {
+    display: inline-block;
+    width:50px;
+    height:50px;
+    text-align:center;
+    transition: all 0.2s ease-out;
+}
+
+.arrow-left:hover {
+    background-color: rgb(73, 71, 71);
+}
+
+.arrow-left i {
+    font-size: 2em;
+    line-height:1.5em;
+}
+
+.level1title {
+    font-size:2em;
+    padding-left:2em;
+}
+

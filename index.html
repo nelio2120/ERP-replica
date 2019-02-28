@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            var n1=0;
+    $('.Nelio').click(function(){        
+    $('#interfaz').toggle('fast','linear');
+    n1++;
+    if (n1>1) {
+        location.reload();
+    }
+       });
+
+    });
+    </script>
+    <style>
+        
+    </style>
+    <title>ERP Réplica</title>
+</head>
+<body>
+    <!-- Emulación ERP -->
+    <div>
+        <div class="navegacion">
+    <ul class="navbar">
+        <li><i class="icon fa fa-bars" ></i></li>
+        <li><img src="media/logo/logo.png"></li>    
+        <li id="Nelio"><span class="Nelio" id="">Menú</span></li>
+        <li><a href="#Inicio">Mesa de Ayuda</a></li>
+        <li><a href="#Inicio">Ayuda</a></li>
+        <li><a href="#Inicio">Solicitud de Certificación</a></li>
+        <li><a href="#Inicio">Sesión</a></li>
+    </ul>
+        </div>
+    <div class="recientes">
+    <ul class="left">
+        <li>ÚLTIMAS OPCIONES</li>
+        <li>Gestionar Horarios de Acceso</li>
+        <li>Reporte de Asignación Inicial de Partidas</li>
+        <li>Gestionar Información Entidad</li>
+        <li>Gestionar Parámetros de Seguridad</li>
+        <li>Monitoreo de Usuarios</li>
+        <li>Consulta de Información General Entidad</li>
+        <li>Gestionar Estado Civil</li>
+        <li>Reporte Información Entidad</li>
+        <li>Gestionar Carga Inicial de Bienes de Larga Duración</li>
+        <li>Gestionar Clases Actividades</li>
+    </ul>
+    </div>
+    <div class="interfaz" id="interfaz" style="display: none">
+        <iframe src="metro-buttons/index.html" frameborder="0" width="85%" height="800px"></iframe>
+    </div>
+ </div>
+</body>
+</html>
